@@ -4,8 +4,8 @@
 var beep = "Beep!"
 var boop = "Boop!"
 var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
-var one = [1]
-var userResult = []
+var userResult = [];
+var test = userResult.toString();
 
 var counter = function(numbersCounted) {
   for (i=0; i <= numbersCounted; i++) {
@@ -13,9 +13,9 @@ var counter = function(numbersCounted) {
   }
 }
 
-var splitNumbers = function(userResult) {
-  userResult.toString().split('').push();
-}
+// var splitNumbers = function(test) {
+//   userResult.toString().split('').push();
+// }
 
 
 
@@ -52,9 +52,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
     var numbersCounted = counter(userInput);
-    var test = splitNumbers(userResult);
-    console.log(userResult);
-    $("#displayResult").text(userResult);
-    userResult = [];
+    var test = userResult.toString().split('');
+    console.log(test)
+    $("#displayResult").text(test);
+    test = [];
   });
 });
