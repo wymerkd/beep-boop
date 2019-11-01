@@ -12,7 +12,8 @@ $(document).ready(function() {
   $("form#submitForm").submit(function(event) {
   event.preventDefault();
   var userNumber = parseInt($("input#userInput").val());
-  var countUserNumber = counter(userNumber)
-  console.log(userResult)
+  var countUserNumber = counter(userNumber);
+  $("#displayResult").text(userResult);
+  userResult = [];
 });
 });
