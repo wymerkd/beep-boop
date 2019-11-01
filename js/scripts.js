@@ -13,14 +13,19 @@ var counter = function(numbersCounted) {
   }
 }
 
+var splitNumbers = function(userResult) {
+  userResult.toString().split('').push();
+}
 
-var test = userResult.map(function(result) {
-      if (one.includes(result)){
-        return(beep)
-      } else {
-        return (userResult)
-      }
-    });
+
+
+// var test = userResult.map(function(result) {
+//       if (one.includes(result)){
+//         return(beep)
+//       } else {
+//         return (userResult)
+//       }
+//     });
 
 
     // if (i === 1) {
@@ -47,6 +52,8 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
     var numbersCounted = counter(userInput);
+    var test = splitNumbers(userResult);
+    console.log(userResult);
     $("#displayResult").text(userResult);
     userResult = [];
   });
