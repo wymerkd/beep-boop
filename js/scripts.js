@@ -4,23 +4,37 @@
 var beep = "Beep!"
 var boop = "Boop!"
 var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
-
-
-
+var one = [1]
 var userResult = []
+
 var counter = function(numbersCounted) {
   for (i=0; i <= numbersCounted; i++) {
-    if (i === 1) {
-      userResult.push(beep);
-    } else if (i === 2) {
-      userResult.push(boop);
-    } else if (i === 3) {
-      userResult.push(sorry);
-    } else {
-      userResult.push(i);
-    }
+    userResult.push(i);
   }
 }
+
+
+var test = userResult.map(function(result) {
+      if (one.includes(result)){
+        return(beep)
+      } else {
+        return (userResult)
+      }
+    });
+
+
+    // if (i === 1) {
+    //   userResult.push(beep);
+    // } else if (i === 2) {
+    //   userResult.push(boop);
+    // } else if (i === 3) {
+    //   userResult.push(sorry);
+    // } else {
+    //   userResult.push(i);
+    // }
+    // }
+    // }
+
 
 // userResult.push(i);
 
