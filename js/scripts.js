@@ -6,21 +6,35 @@ var beep = "Beep!"
 var boop = "Boop!"
 var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
 // var newUserResult = [];
-var userResults = [];
+var userNumbers2 = [];
+var userNumbers = [];
+var userConvertedNumbers = userNumbers.toString();
 
 var counter = function(numbersCounted) {
   for (i=0; i <= numbersCounted; i++) {
-    if (i === 1) {
-      userResults.push(beep);
-    } else if (i === 2) {
-      userResults.push(boop);
-    } else if (i === 3) {
-      userResults.push(sorry);
-    } else {
-      userResults.push(i);
-    }
+    userNumbers2.push(i);
   }
 }
+
+var identify = function(number) {
+  for (i=0; i <= userConvertedNumbers; i++) {
+  if (i === "1") {
+    userNumbers.push(beep);
+}
+} console.log(userNumbers);
+}
+
+//   } else if (i === 2) {
+//     userNumbers.push(boop);
+//   } else if (i === 3) {
+//     userNumbers.push(sorry);
+//   } else {
+//     userNumbers.push(i);
+//   }
+// }
+// }
+
+
 
 //User Interface Logic
 $(document).ready(function() {
@@ -28,8 +42,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
     var numbersCounted = counter(userInput);
-    $("#displayResult").text(userResults);
-    userResults = [];
+    identify(userConvertedNumbers);
+    $("#displayResult").text(userNumbers2);
+    userNumbers2 = [];
   });
 });
 
@@ -38,7 +53,7 @@ $(document).ready(function() {
 
 
 
-// userResults.forEach(function(result) {
+// userNumbers.forEach(function(result) {
   //   if (result === 1) {
     //     newUserResult.push(beep);
     //   }
@@ -48,8 +63,8 @@ $(document).ready(function() {
 
 
 
-    // function identifier(userResults) {
-      //   for (i=0; i <= userResults; i++) {
+    // function identifier(userNumbers) {
+      //   for (i=0; i <= userNumbers; i++) {
         //     if (i === 1) {
           //       newUserResult.push(beep);
           //     } else if (i === 2) {
@@ -72,13 +87,13 @@ $(document).ready(function() {
 
                 //   } for (i=0; i <= numbersCounted; i++)
                 //   if (i === 1) {
-                  //     userResults.push(beep);
+                  //     userNumbers.push(beep);
                   //   } else if (i === 2) {
-                    //     userResults.push(boop);
+                    //     userNumbers.push(boop);
                     //   } else if (i === 3) {
-                      //     userResults.push(sorry);
+                      //     userNumbers.push(sorry);
                       //   } else {
-                        //     userResults.push(i);
+                        //     userNumbers.push(i);
                         //   }
                         // }
                         // }
@@ -91,11 +106,11 @@ $(document).ready(function() {
                           //     if (numberAlerts.includes(test)){
                             //       newUserResult.push(beep);
                             //     // } else if (i === 2) {
-                              //     //   userResults.push(boop);
+                              //     //   userNumbers.push(boop);
                               //     // } else if (i === 3) {
-                                //     //   userResults.push(sorry);
+                                //     //   userNumbers.push(sorry);
                                 //     } else {
-                                  //       userResults.push(i);
+                                  //       userNumbers.push(i);
                                   //     }
                                   //   });
 
@@ -107,31 +122,31 @@ $(document).ready(function() {
 
 
                                   // var splitNumbers = function(test) {
-                                    //   userResults.toString().split('').push();
+                                    //   userNumbers.toString().split('').push();
                                     // }
 
 
 
-                                    // var test = userResults.map(function(result) {
+                                    // var test = userNumbers.map(function(result) {
                                       //       if (one.includes(result)){
                                         //         return(beep)
                                         //       } else {
-                                          //         return (userResults)
+                                          //         return (userNumbers)
                                           //       }
                                           //     });
 
 
                                           //     if (i === 1) {
-                                            //       userResults.push(beep);
+                                            //       userNumbers.push(beep);
                                             //     } else if (i === 2) {
-                                              //       userResults.push(boop);
+                                              //       userNumbers.push(boop);
                                               //     } else if (i === 3) {
-                                                //       userResults.push(sorry);
+                                                //       userNumbers.push(sorry);
                                                 //     } else {
-                                                  //       userResults.push(i);
+                                                  //       userNumbers.push(i);
                                                   //     }
                                                   //   }
                                                   // }
                                                   //
 
-                                                  // userResults.push(i);
+                                                  // userNumbers.push(i);
