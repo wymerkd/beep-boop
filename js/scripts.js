@@ -21,7 +21,7 @@ var identify = function(number) {
   if (i === "1") {
     userNumbers.push(beep);
 }
-} console.log(userNumbers);
+}
 }
 
 //   } else if (i === 2) {
