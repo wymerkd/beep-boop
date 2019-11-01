@@ -4,13 +4,12 @@
 var beep = "Beep!"
 var boop = "Boop!"
 var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
-var one = [1]
 
-// var userResult = []
-// var counter = function(userNumber) {
-//   for (i=0; i <= userNumber; i++) {
-  
-  var counter = numbers.map(function(number) {
+
+
+var userResult = []
+var counter = function(numbersCounted) {
+  for (i=0; i <= numbersCounted; i++) {
     if (i === 1) {
       userResult.push(beep);
     } else if (i === 2) {
@@ -20,7 +19,8 @@ var one = [1]
     } else {
       userResult.push(i);
     }
-  });
+  }
+}
 
 // userResult.push(i);
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
   $("form#submitForm").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
-    // var countUserNumber = counter(userNumber);
+    var numbersCounted = counter(userInput);
     $("#displayResult").text(userResult);
     userResult = [];
   });
