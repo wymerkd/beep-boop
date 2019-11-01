@@ -1,9 +1,18 @@
+//Business Logic
+var userResult = []
+var counter = function(userNumber) {
+  for (i=0; i <= userNumber; i++) {
+    userResult.push(i);
+  }
+}
+
 
 //User Interface Logic
 $(document).ready(function() {
   $("form#submitForm").submit(function(event) {
   event.preventDefault();
   var userNumber = parseInt($("input#userInput").val());
-  console.log(typeof userNumber);
+  var countUserNumber = counter(userNumber)
+  console.log(userResult)
 });
 });
