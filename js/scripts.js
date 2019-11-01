@@ -1,10 +1,27 @@
 //Business Logic
+
+var beep = "Beep!"
+var boop = "Boop!"
+var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
+
+
 var userResult = []
 var counter = function(userNumber) {
   for (i=0; i <= userNumber; i++) {
-    userResult.push(i);
+    if (i === 1) {
+      userResult.push(beep);
+    } else if (i === 2) {
+      userResult.push(boop);
+    } else if (i === 3) {
+      userResult.push(sorry);  
+    } else {
+      userResult.push(i);
+    }
   }
 }
+// userResult.push(i);
+
+
 
 
 //User Interface Logic
