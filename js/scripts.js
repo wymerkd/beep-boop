@@ -17,6 +17,8 @@ var counter = function(numbersCounted) {
   }
 }
 
+
+
 // var hey = tests.map(function(test) {
 //     if (numberAlerts.includes(test)){
 //       newUserResult.push(beep);
