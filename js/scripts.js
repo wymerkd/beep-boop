@@ -8,6 +8,7 @@
 
 var userNumbers = [];
 
+
 function counter(numbersCounted) {
   for (i=0; i <= numbersCounted; i++) {
     userNumbers.push(i);
