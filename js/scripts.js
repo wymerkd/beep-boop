@@ -1,13 +1,17 @@
 
 
+
 //Business Logic
 
-// var beep = "Beep!"
-// var boop = "Boop!"
-// var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
+var beep = "Beep!"
+var boop = "Boop!"
+var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
 
 var userNumbers = [];
-var convertedNumbers = []
+var convertedNumbers = [];
+var userOutput = [];
+
+
 
 
 function counter(countedNumbers) {
@@ -20,6 +24,20 @@ function convert(countedNumbers) {
   convertedNumbers.push(userNumbers.toString());
 }
 
+  // for (i=0; i < convertedNumbers; i++) {
+  //   if (i === "1") {
+  //     userOutput.push(beep);
+  //   } else if (i === "2") {
+  //     userOutput.push(boop);
+  //   } else if (i === "3") {
+  //     userOutput.push(sorry);
+  //   } else {
+  //     userOutput.push(i);
+  //   }
+  // }
+
+
+
 
 
 
@@ -30,7 +48,7 @@ $(document).ready(function() {
     var userInput = parseInt($("input#userInput").val());
     var countedNumbers = counter(userInput);
     var convertNumbers = convert(countedNumbers);
-    console.log(convertedNumbers)
-    $("#displayResult").text(userNumbers);
+
+    $("#displayResult").text(userOutput);
   });
 });
