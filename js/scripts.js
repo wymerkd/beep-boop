@@ -24,8 +24,7 @@ function convert() {
       return (userNumber)
     }
   });
-
-  console.log(userResults);
+  console.log(userResults)
 }
 
 
@@ -36,9 +35,6 @@ $(document).ready(function() {
     var userInput = parseInt($("input#userInput").val());
     var countedNumbers = counter(userInput);
     convert();
-
-
-    // console.log(newArray);
     $("#displayResult").text(userResults);
     userNumbers= [];
   });
