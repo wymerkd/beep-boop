@@ -2,6 +2,7 @@
 
 
 
+
 //Business Logic
 
 var beep = "Beep!"
@@ -12,78 +13,58 @@ var one = "1"
 
 var userNumbers = [];
 var convertedNumbers = [];
-var userOutput = [];
-
-
 
 
 function counter(countedNumbers) {
   for (i=0; i <= countedNumbers; i++) {
-    userNumbers.push(i);
+    userNumbers.push(i.toString());
   }
 }
 
-function convert(countedNumbers) {
-  convertedNumbers.push(userNumbers.toString());
-}
+// function convert(countedNumbers) {
+//   convertedNumbers.push(userNumbers.toString());
+//   convertedNumbers.forEach(function(convertedNumber) {
+//
+//   }
+//
+//   if (convertedNumbers.includes('1')) {
+//     return("Beep")
+//   }
+// }
 
 
-var checkFunction = function(convertedNumbers) {
-  for (i = 0; i < convertedNumbers; i++) {
-    if (convertedNumbers.includes(one)) {
-      userOutput.push("beep");
-    } else if (convertedNumbers.includes("2")) {
-      return ("boop");
-    } else {
-      return convertedNumbers;
-    }
-  }
-}
-
-
-
-// var replaceNumbers = convertedNumbers.map(function(convertedNumber) {
-  //   if (convertedNumber.includes("1")) {
-    //     return ("1" = "Beep");
-    //   } else {
-      //     return("Boop")
-      //   }
-      // });
-
+// var checkFunction = function(convertedNumbers) {
+//   var userOutput = [];
+//   console.log(userOutput);
+//
+//     if (convertedNumbers.includes("1")) {
+//       userOutput.push("beep");
+//     } else if (convertedNumbers.includes("2")) {
+//       return ("boop");
+//     } else {
+//       return convertedNumbers;
+//     }
+//   }
 
 
 
 
 
 
-      // for (i=0; i < convertedNumbers; i++) {
-        //   if (i === "1") {
-          //     userOutput.push(beep);
-          //   } else if (i === "2") {
-            //     userOutput.push(boop);
-            //   } else if (i === "3") {
-              //     userOutput.push(sorry);
-              //   } else {
-                //     userOutput.push(i);
-                //   }
-                // }
 
 
 
 
+//User Interface Logic
+$(document).ready(function() {
+  $("form#submitForm").submit(function(event) {
+    event.preventDefault();
+    var userInput = parseInt($("input#userInput").val());
+    var countedNumbers = counter(userInput);
+    // var convertNumbers = convert(countedNumbers);
+    // var result = checkFunction(convertedNumbers);
+    console.log(userNumbers);
 
-
-                //User Interface Logic
-                $(document).ready(function() {
-                  $("form#submitForm").submit(function(event) {
-                    event.preventDefault();
-                    var userInput = parseInt($("input#userInput").val());
-                    var countedNumbers = counter(userInput);
-                    var convertNumbers = convert(countedNumbers);
-                    var result = checkFunction(convertedNumbers);
-                    console.log(convertedNumbers);
-                    console.log(userOutput);
-                    // console.log(replaceNumbers);
-                    $("#displayResult").text(userOutput);
-                  });
-                });
+    $("#displayResult").text(convertedNumbers);
+  });
+});
