@@ -7,18 +7,24 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <h1>Beep-Bop Translator</h1>
-      <form id="submitForm">
-        <div class="form-group">
-          <label for="userInput">Enter a number to count like a robot: </label>
-          <input id="userInput" type="number">
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-      <div>
+      <div class="contain-text">
+        <h1>Beep-Boop</h1>
+        <form id="submitForm">
+          <div class="form-group">
+            <p id="inputParagraph">Enter a number to count like a robot:</p>
+            <label for="userInput"></label>
+            <input id="userInput" type="number" onfocus="this.value=''">
+          </div>
+          <button id="buttonStyle" type="submit" class="btn btn-secondary btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contain-results">
         <p id=displayResult></p>
       </div>
     </div>

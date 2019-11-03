@@ -1,7 +1,54 @@
 body {
-  font-size: 50px;
   background: url('../img/robot-background2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-family: 'Orbitron', sans-serif;
+  color: #595959;
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
+}
+
+#inputParagraph {
+  font-size: 24px;
+  padding-left: 4px;
+  font-family: 'Orbitron', sans-serif;
+  color: #595959;
+  text-shadow: 2px 2px 8px #dfe6e9;
+}
+
+.contain-text {
+padding: 200px 0 40px 32px;
+width: 520px;
+}
+
+.contain-results {
+  padding-left: 32px;
+}
+
+#buttonStyle {
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px black;
+  margin-left: 4px;
+}
+
+
+input {
+  width: 300px;
+  margin-bottom: 12px;
+}
+
+#displayResult {
+  font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffb84d;
+  text-shadow: 1px 1px black;
+  line-height: 50px;
+  padding-top: 20px;
 }
