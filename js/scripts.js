@@ -7,9 +7,7 @@ var one = "1"
 var two = "2"
 var three ="3"
 
-// var finalResults = newArray
 var userNumbers = [];
-var results = [];
 
 function counter(countedNumbers) {
   for (i=0; i <= countedNumbers; i++) {
@@ -17,7 +15,7 @@ function counter(countedNumbers) {
   }
 }
 function convert() {
-  newArray = userNumbers.map(function(userNumber) {
+  userResults = userNumbers.map(function(userNumber) {
     if (userNumber.includes(three)){
       return(sorry)
     } else if (userNumber.includes(two)) {
@@ -29,7 +27,7 @@ function convert() {
     }
   });
   // newArray = results
-  console.log(newArray);
+  console.log(userResults);
 }
 
 
@@ -42,10 +40,10 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
     var countedNumbers = counter(userInput);
-    var userResults = convert();
-    
+    convert();
+
 
     // console.log(newArray);
-    $("#displayResult").text(newArray);
+    $("#displayResult").text(userResults);
   });
 });
