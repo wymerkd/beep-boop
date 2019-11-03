@@ -9,16 +9,15 @@ var three ="3"
 
 // var finalResults = newArray
 var userNumbers = [];
+var results = [];
 
 function counter(countedNumbers) {
   for (i=0; i <= countedNumbers; i++) {
     userNumbers.push(i.toString());
   }
 }
-
-
 function convert() {
-  var newArray = userNumbers.map(function(userNumber) {
+  newArray = userNumbers.map(function(userNumber) {
     if (userNumber.includes(three)){
       return(sorry)
     } else if (userNumber.includes(two)) {
@@ -29,8 +28,12 @@ function convert() {
       return (userNumber)
     }
   });
+  // newArray = results
   console.log(newArray);
 }
+
+
+
 
 
 //User Interface Logic
@@ -40,10 +43,9 @@ $(document).ready(function() {
     var userInput = parseInt($("input#userInput").val());
     var countedNumbers = counter(userInput);
     var userResults = convert();
+    
 
-
-    console.log(userNumbers);
-
-    // $("#displayResult").text(finalResults);
+    // console.log(newArray);
+    $("#displayResult").text(newArray);
   });
 });
