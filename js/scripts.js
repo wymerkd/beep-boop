@@ -18,8 +18,13 @@ var convertedNumbers = [];
 function counter(countedNumbers) {
   for (i=0; i <= countedNumbers; i++) {
     userNumbers.push(i.toString());
+    if (one.includes(userNumbers[i])) {
+    return "beep";
   }
 }
+}
+
+
 
 // function convert(countedNumbers) {
 //   convertedNumbers.push(userNumbers.toString());
@@ -63,7 +68,7 @@ $(document).ready(function() {
     var countedNumbers = counter(userInput);
     // var convertNumbers = convert(countedNumbers);
     // var result = checkFunction(convertedNumbers);
-    console.log(userNumbers);
+    console.log(countedNumbers);
 
     $("#displayResult").text(convertedNumbers);
   });
