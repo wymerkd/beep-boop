@@ -1,3 +1,7 @@
-body, .btn {
+body {
   font-size: 50px;
+  background: url('../img/robot-background2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }

@@ -3,9 +3,6 @@
 var beep = "Beep!"
 var boop = "Boop!"
 var sorry = "I'm sorry, Dave. I'm afraid I can't do that."
-var one = "1"
-var two = "2"
-var three ="3"
 
 var userNumbers = [];
 
@@ -14,13 +11,14 @@ function counter(countedNumbers) {
     userNumbers.push(i.toString());
   }
 }
+
 function convert() {
   userResults = userNumbers.map(function(userNumber) {
-    if (userNumber.includes(three)){
+    if (userNumber.includes('3')){
       return(sorry)
-    } else if (userNumber.includes(two)) {
+    } else if (userNumber.includes('2')) {
       return (boop)
-    } else if (userNumber.includes(one)) {
+    } else if (userNumber.includes('1')) {
       return (beep)
     } else {
       return (userNumber)
@@ -29,9 +27,6 @@ function convert() {
   // newArray = results
   console.log(userResults);
 }
-
-
-
 
 
 //User Interface Logic
@@ -45,5 +40,6 @@ $(document).ready(function() {
 
     // console.log(newArray);
     $("#displayResult").text(userResults);
+    userNumbers= [];
   });
 });
