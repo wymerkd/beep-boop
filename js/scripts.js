@@ -24,7 +24,7 @@ function convert() {
       return (userNumber)
     }
   });
-  // newArray = results
+
   console.log(userResults);
 }
 
