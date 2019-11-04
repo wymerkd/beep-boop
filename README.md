@@ -19,7 +19,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 | Numbers that contain a 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that." | 13  |  "I'm sorry, Dave. I'm afraid I can't do that." |
 
 ## Setup/Installation Requirements
-* _Use the following link to view the page: (https://wymerkd.github.io//)_
+* _Use the following link to view the page: (https://wymerkd.github.io/beep-boop/)_
 * _Or_
 * _Clone or download the repository from GitHub_
 * _Open index.html in browser_
