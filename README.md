@@ -1,4 +1,4 @@
-# _Beep Bop_
+# _Beep Boop_
 
 #### _A web application that takes a number from a user and displays a range of numbers or a message depending on the user's input, 11/01/2019_
 
@@ -13,9 +13,8 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 
 |  Behavior | Input  | Output  |
 |---|---|---|
-|  User inputs NaN | "hi"  | false  |
-|  The application retturns a range of numbers from 0 to the users inputted numnber| 4 | 1, 2, 3, 4  |
-|  Numbers that contain a 1 are replaced with "Beep!" unless it also contains a 2 or a 3| 11 | "Beep!" |
+| The application returns a range of numbers from 0 to the users inputted number| 4 | 1, 2, 3, 4  |
+| Numbers that contain a 1 are replaced with "Beep!" unless it also contains a 2 or a 3| 11 | "Beep!" |
 | Numbers that contain a 2 are replaced with "Boop!" unless it also contains a 3 | 12 | "Boop!" |
 | Numbers that contain a 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that." | 13  |  "I'm sorry, Dave. I'm afraid I can't do that." |
 
@@ -27,7 +26,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 
 ## Known Bugs
 
-_Application does not currently function_
+_No known bugs_
 
 ## Support and contact details
 
